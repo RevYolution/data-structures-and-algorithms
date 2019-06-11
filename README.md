@@ -9,6 +9,9 @@ Without utilizing any of the built-in methods available to your language, return
 ## Approach 
 Has user select size of array then populates array with their selection of integers. Once input is complete displays original array and reversed. 
 
-##
+## Solution
+### White Board
 ![White Board Reverse Array](https://user-images.githubusercontent.com/47017138/59294232-cd7a2400-8c35-11e9-9f59-ce05d16332fc.jpg)
+
+### Output
 ![Rverse Array Output](https://user-images.githubusercontent.com/47017138/59294917-6a898c80-8c37-11e9-92b1-9a01fb42208a.PNG)
