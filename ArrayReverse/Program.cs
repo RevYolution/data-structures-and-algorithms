@@ -25,8 +25,18 @@ namespace ArrayReverse
 
             Console.Write(initialArraySize[i]);
             }
-            Console.WriteLine("To reverse your array hit Enter");
 
+            int reverseArray = initialArraySize.Length - 1;
+            string reversed = null;
+
+            while (reverseArray >= 0)
+            {
+                reversed = reversed + initialArraySize[reverseArray];
+                reverseArray--;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine($"Reversed array is {reversed}");
         }
     }
 }
