@@ -32,7 +32,7 @@ Then select and open ```ArrayShift.sln```
 
 
 ##### WhiteBoard
-![Array Shift Whiteboard](\assets\ArrayShift Whiteboard.jpg)
+![ArrayShift Whiteboard](https://user-images.githubusercontent.com/47017138/59377372-f0c0d400-8d06-11e9-8430-5b1f7153dbc1.jpg)
 ##### Using the Application
 Coming Soon
 ##### Application End
