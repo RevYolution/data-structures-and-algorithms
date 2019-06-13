@@ -1,14 +1,23 @@
 using System;
 using Xunit;
+using BinarySearch;
 
 namespace BinaryTest
 {
     public class UnitTest1
     {
-        [Fact]
-        public void Test1()
-        {
+        [Theory]
+        [InlineData(2,3)]
+        [InlineData(4,5)]
+        [InlineData(1,2)]
+        [InlineData(3,4)]
+        [InlineData(0,1)]
 
+
+        public void CanBinarySearch(int expected, int searchKey)
+        {
+            int[] testArray = new int[7] { 1, 2, 3, 4, 5, 6, 7 };
+            Assert.Equal(expected, Program.BinarySearch(testArray, searchKey));
         }
     }
 }
