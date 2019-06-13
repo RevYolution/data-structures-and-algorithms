@@ -10,16 +10,17 @@ namespace BinarySearch
             string arraySize = Console.ReadLine();
             int sizeOfArray = Convert.ToInt32(arraySize);
             int[] emptyArray = new int[sizeOfArray];
-            Console.WriteLine("Input numbers one at a time in accending order into your array");
+            Console.WriteLine("Input numbers one at a time in ascending order into your array");
 
             for (int i = 0; i < emptyArray.Length; i++)
             {
-                Console.WriteLine($"Input number {i} of {emptyArray.Length}");
+                Console.WriteLine($"Input number {i+1} of {emptyArray.Length}");
                 string arrayInput = Console.ReadLine();
                 int arrayNumbers = Convert.ToInt32(arrayInput);
                 emptyArray[i] = arrayNumbers;
             }
 
+            //Console.WriteLine($"Your array is [{emptyArray}]");
             Console.WriteLine("Enter a number in your array you would like to know the index of");
             string searchKeyInput = Console.ReadLine();
             int searchKeyNumber = Convert.ToInt32(searchKeyInput);
@@ -29,6 +30,8 @@ namespace BinarySearch
 
 
            int searchArray = BinarySearch(emptyArray, searchKeyNumber);
+
+            Console.WriteLine($"The index of {searchKeyNumber} is {searchArray}.");
         }
 
         public static int BinarySearch(int[] arr, int searchKey)
@@ -38,7 +41,7 @@ namespace BinarySearch
 
             while (left <= right)
             {
-                int m = (left + right) / 2;
+                int m = Math.Ceiling((left + right) / 2);
                 if (arr[m] < searchKey)
                 {
                     left = m + 1;
