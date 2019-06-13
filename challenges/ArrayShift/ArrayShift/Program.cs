@@ -6,23 +6,31 @@ namespace ArrayShift
     {
         static void Main(string[] args)
         {
-            insertShiftArray();
+            int[] array = {1,2,3,4,5};
+            int insertion = 11;
+            Console.WriteLine(",", insertShiftArray(array, insertion));
+            insertShiftArray(array, insertion);
         }
-
-        public static int[] insertShiftArray()
+        // Floor half way point. Create new empty array and add in values from previous values with addition of new value. Create if else statement related to midpoint. Add a counter.  
+        public static int[] insertShiftArray(int[] array, int insertion)
         {
-            int[] array = new int[5] { 1, 3, 4, 8, 10 };
-            int insertion = 9;
-            for (int i = 0; i <= array.Length; i++)
+            int mid = array.Length / 2;
+            int[] newArray = new int[array.Length +1];
+            int counter = 0;
+
+            for (int i = 0; i <= newArray.Length; i++)
             {
-                if (i >= (array.Length)/2 && i < array.Length+1)
+                if (newArray[i] = mid)
                 {
-                    i = insertion;
+                    newArray[i] = insertion;
                 }
-            }
-                int[] insertArray = array;
-            Console.WriteLine(insertArray);
-                return insertArray;
+                else 
+                {
+                    newArray[i] = array[counter++];
+                }
+                
+                return newArray;
+             }
         }
     }
 }
