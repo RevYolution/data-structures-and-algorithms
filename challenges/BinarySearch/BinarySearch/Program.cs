@@ -41,12 +41,13 @@ namespace BinarySearch
 
             while (left <= right)
             {
-                int m = Math.Ceiling((left + right) / 2);
+                double startingM = Math.Floor((double)(left + right) / 2);
+                int m = Convert.ToInt32(startingM);
                 if (arr[m] < searchKey)
                 {
                     left = m + 1;
                 }
-                if (arr[m] > searchKey)
+                else if (arr[m] > searchKey)
                 {
                     right = m - 1;
                 }
