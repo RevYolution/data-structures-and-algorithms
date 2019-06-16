@@ -21,5 +21,18 @@ namespace BinaryTest
             int[] testArray = new int[7] { 1, 2, 3, 4, 5, 6, 7 };
             Assert.Equal(expected, Program.BinarySearch(testArray, searchKey));
         }
+
+        [Theory]
+        [InlineData(-1, 6)]
+        [InlineData(-1, 0)]
+        [InlineData(-1, 7)]
+
+        public void ExpectedFailSearch(int expected, int searchKey)
+        {
+            int[] testArray = new int[5] {1, 2, 3, 4, 5};
+            Assert.Equal(expected, Program.BinarySearch(testArray, searchKey));
+
+
+        }
     }
 }
