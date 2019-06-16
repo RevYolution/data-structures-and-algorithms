@@ -56,7 +56,7 @@ namespace BinarySearch
                     return m;
                 }
             }
-            return 5;
+            return -1;
         }
     }
 }
