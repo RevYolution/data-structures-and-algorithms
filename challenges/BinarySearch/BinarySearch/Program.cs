@@ -33,7 +33,12 @@ namespace BinarySearch
 
             Console.WriteLine($"The index of {searchKeyNumber} is {searchArray}.");
         }
-
+        /// <summary>
+        /// Searches a sorted array for a given number and returns the index of the number
+        /// </summary>
+        /// <param name="arr">Sorted array</param>
+        /// <param name="searchKey">Desired number searching for</param>
+        /// <returns>Index of the desired number</returns>
         public static int BinarySearch(int[] arr, int searchKey)
         {
             int left = 0;
