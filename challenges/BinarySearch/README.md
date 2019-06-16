@@ -39,8 +39,11 @@ Then select and open ```BinarySearch.sln```
 ![Binary Search End](https://user-images.githubusercontent.com/47017138/59569519-71513e80-903f-11e9-80a9-1d622c19ad6a.PNG)
 
 ------------------------------
+## Approach & Efficiency
+Once a sorted array is set up the upper and lower bounds of the array are set. The middle index is calculated by dividing the sum of the bounds by 2. A search key is given and the middle index is compared to the key. If the index is less than the search key the lower bound is set to the middle index added to one. If the index is greater than the search key the upper bound is set to the middle index minus one. The comarison continues until the index is equal to the search key or is not found which results in an error.  
+
 ### Big O
-**Time**: O(log n)  
+**Time**: O(n)  
 **Space**: O(1)
 
 ## Change Log
