@@ -6,7 +6,7 @@ A linked list is a data structure that contains nodes which point to another nod
 ## Challenge
 Implement a Singly Linked List Data Structure
 - Node Class (with Next and Value properties)
-- LinkedList Class (With Head and Current Properties) as well as
+- LinkedList Class (With Head and Current Properties)
 - Constructor to require at least one Node
 - Add (O(1))
 - Print (O(n))
@@ -17,6 +17,3 @@ Implement a Singly Linked List Data Structure
 ## What is it used for?
 
 A linked list is used for deletions in constant time, linear lookup time, and constant insertion times.Linked lists are a dynamic data structure not requiring sequencial memory allocation. 
-
-
- 
