@@ -4,8 +4,9 @@ using System.Text;
 
 namespace LinkedList.Classes
 {
-    class LList
+    public class LList
     {
+        public Node Current { get; set; }
         public Node Head { get; set; }
         public LList()
         {
@@ -37,11 +38,12 @@ namespace LinkedList.Classes
         }
         public bool Includes(int value)
         {
-            Node searchValue = new Node(value);
-            while (searchValue != value)
+            while (Current != null)
             {
-
+                if (Current.Value == value) return true;
+                else Current = Current.Next;
             }
+            return false;
         }
     }
 
