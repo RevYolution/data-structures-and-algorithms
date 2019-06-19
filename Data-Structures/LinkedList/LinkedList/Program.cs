@@ -7,14 +7,12 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            TheLinkedList();
-           
-        }
-
-        public static void TheLinkedList()
-        {
             LList list = new LList();
+            for (int i = 0; i < 15; i++)
+            {
+                list.Insert(i + 1);
+            }
+            Console.WriteLine(list.Print);
         }
     }
 }
