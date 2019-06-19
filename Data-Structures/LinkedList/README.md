@@ -19,7 +19,7 @@ Implement a Singly Linked List Data Structure
 A linked list is used for deletions in constant time, linear lookup time, and constant insertion times.Linked lists are a dynamic data structure not requiring sequencial memory allocation. 
 
 ## Whiteboard
-![LinkList Whiteboard](https://user-images.githubusercontent.com/47017138/59707257-1d696580-91b7-11e9-80a7-907c35f447d2.jpg)
+![LinkList Whiteboard](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/LinkList%20Whiteboard.jpg)
 
 ### Finding kth From the End Whiteboard
-![LinkListkth Whiteboard](https://user-images.githubusercontent.com/47017138/59790061-ea40d800-9283-11e9-9dde-b15dccb1a885.jpg)
+![LinkListkth Whiteboard](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/LinkListkth%20Whiteboard.jpg)
