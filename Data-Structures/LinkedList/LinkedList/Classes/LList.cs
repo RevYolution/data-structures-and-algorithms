@@ -45,6 +45,7 @@ namespace LinkedList.Classes
         /// <returns></returns>
         public bool Includes(int value)
         {
+            Current = Head;
             while (Current != null)
             {
                 if (Current.Value == value) return true;
