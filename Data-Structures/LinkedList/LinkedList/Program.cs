@@ -12,7 +12,7 @@ namespace LinkedList
             {
                 list.Insert(i + 1);
             }
-            Console.WriteLine(list.Print);
+            Console.WriteLine(list.Print());
         }
     }
 }
