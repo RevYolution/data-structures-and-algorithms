@@ -119,6 +119,34 @@ namespace LinkedList.Classes
                 Current = Current.Next;
             }
         }
+
+        public int FindKthFromEnd(int k)
+        {
+            Current = Head;
+            int counter = 0;
+            if(k < 0)
+            {
+                throw new ArgumentOutOfRangeException("k is out of range. Please choose a non negative number.");
+            }
+
+            while(Current.Next != null)
+            {
+                counter++;
+                Current = Current.Next;
+            }
+
+            if(k > counter)
+            {
+                throw new ArgumentOutOfRangeException("k is too large. Please choose a smaller value for k.");
+            }
+
+            while(k < counter)
+            {
+                counter--;
+                Current = Current.Next;
+            }
+            return Current.Value;
+        }
     }
 
 }
