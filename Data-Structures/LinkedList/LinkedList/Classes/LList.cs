@@ -8,16 +8,6 @@ namespace LinkedList.Classes
     {
         public Node Current { get; set; }
         public Node Head { get; set; }
-        public LList()
-        {
-
-        }
-
-        public LList(int value)
-        {
-            Node node = new Node(value);
-            Head = node;
-        }
 
         /// <summary>
         /// Adds new node at the start of the list
@@ -25,7 +15,7 @@ namespace LinkedList.Classes
         /// <param name="value">Value of the added node</param>
         public void Insert(int value)
         {
-            Node node = new Node(value);
+            Node node = new Node(value) { Next = Head};
             node.Next = Head;
             Head = node;
         }
@@ -55,6 +45,7 @@ namespace LinkedList.Classes
         /// <returns></returns>
         public bool Includes(int value)
         {
+            Current = Head;
             while (Current != null)
             {
                 if (Current.Value == value) return true;
@@ -106,6 +97,26 @@ namespace LinkedList.Classes
                         Current = Current.Next;
                     }
                 }
+            }
+        }
+
+        /// <summary>
+        /// Adds new node after target node
+        /// </summary>
+        /// <param name="target">Node to be added after</param>
+        /// <param name="value">Value of the node being added</param>
+        public  void InsertAfter(int target, int value)
+        {
+            Current = Head;
+            while (Current != null)
+            {
+                if (Current.Value == target)
+                {
+                    Node addedNode = new Node(value) { Next = Current.Next };
+                    Current.Next = addedNode;
+                    break;
+                }
+                Current = Current.Next;
             }
         }
     }

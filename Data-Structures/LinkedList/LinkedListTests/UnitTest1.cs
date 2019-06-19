@@ -10,80 +10,89 @@ namespace LinkedListTests
         public void CanMakeAList()
         {
             LList testList = new LList();
+            Assert.NotNull(testList);
         }
 
         [Fact]
         public void CanInsertIntoList()
         {
-
+            LList testList = new LList();
+            testList.Insert(20);
+            Assert.Equal(20, testList.Head.Value);
         }
 
         [Fact]
         public void HeadPointsToFirstNode()
         {
-
+            LList testList = new LList();
+            testList.Insert(20);
+            testList.Insert(11);
+            Assert.Equal(20, testList.Head.Next.Value);
         }
 
         [Fact]
         public void CanAddMultipleNodesToList()
         {
-
-        }
-
-        [Theory]
-        [InlineData(true, 3)]
-        [InlineData(false, 205)]
-        public void CanFindValueInList(bool expected, int value)
-        {
-
+            LList testList = new LList();
+            testList.Insert(20);
+            testList.Insert(11);
+            Assert.NotNull(testList.Head.Next);
         }
 
         [Fact]
-        public void CanReturnAllNodeValues()
+        public void CanFindValueInListTrue()
         {
-
+            LList testList = new LList();
+            testList.Insert(20);
+            Assert.True(testList.Includes(20));
         }
 
-        [Theory]
-        [InlineData(1, 1)]
-        [InlineData(2, 2)]
-        [InlineData(3, 3)]
-        [InlineData(10, 10)]
-        [InlineData(20, 20)]
-        public void CanAddNodeToEndOfList(int expected, int node)
-        {
+        //    [Fact]
+        //    public void CanReturnAllNodeValues()
+        //    {
 
-        }
+        //    }
 
-        [Fact]
-        public void CanAddMultipleNodesToEndOfList()
-        {
+        //    [Theory]
+        //    [InlineData(1, 1)]
+        //    [InlineData(2, 2)]
+        //    [InlineData(3, 3)]
+        //    [InlineData(10, 10)]
+        //    [InlineData(20, 20)]
+        //    public void CanAddNodeToEndOfList(int expected, int node)
+        //    {
 
-        }
+        //    }
 
-        [Fact]
-        public void CanAddBeforeANode()
-        {
+        //    [Fact]
+        //    public void CanAddMultipleNodesToEndOfList()
+        //    {
 
-        }
+        //    }
 
-        [Fact]
-        public void CanAddNodeAtStartOfList()
-        {
+        //    [Fact]
+        //    public void CanAddBeforeANode()
+        //    {
 
-        }
+        //    }
 
-        [Fact]
-        public void CanAddNodeToMiddleOfList()
-        {
+        //    [Fact]
+        //    public void CanAddNodeAtStartOfList()
+        //    {
 
-        }
+        //    }
 
-        [Fact] 
-        public void CanAddToEndofList()
-        {
+        //    [Fact]
+        //    public void CanAddNodeToMiddleOfList()
+        //    {
 
-        }
+        //    }
+
+        //    [Fact] 
+        //    public void CanAddToEndofList()
+        //    {
+
+        //    }
 
     }
 }
