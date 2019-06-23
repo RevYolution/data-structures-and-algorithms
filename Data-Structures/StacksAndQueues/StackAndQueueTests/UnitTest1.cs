@@ -83,22 +83,26 @@ namespace StackAndQueueTests
             Assert.NotNull(testStack);
         }
 
-        //[Theory]
-        //[InlineData()]
-        //[InlineData()]
-        //[InlineData()]
-        //[InlineData()]
-        //[InlineData()]
-        //public void CanEnqueue()
-        //{
+        [Fact]
+        public void CanEnqueue()
+        {
+            Queue<int> testQueue = new Queue<int>();
 
-        //}
+            testQueue.Enqueue(11);
+            Assert.Equal(11, testQueue.Peek());
+        }
 
-        //[Fact]
-        //public void CanEnqueueMultiple()
-        //{
+        [Fact]
+        public void CanEnqueueMultiple()
+        {
+            Queue<int> testQueue = new Queue<int>();
 
-        //}
+            testQueue.Enqueue(11);
+            testQueue.Enqueue(27);
+            testQueue.Enqueue(20);
+            Assert.Equal(27, testQueue.Rear.Value);
+
+        }
 
         //[Theory]
         //[InlineData()]
