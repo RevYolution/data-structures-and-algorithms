@@ -31,12 +31,12 @@ Then select and open ```BinarySearch.sln```
 
 
 ##### WhiteBoard
-![Binary Search Whiteboard](https://user-images.githubusercontent.com/47017138/59447848-d7786000-8db8-11e9-892a-26cc26ee8dd2.jpg)
+![Binary Search Whiteboard](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/Binary%20Search%20Whiteboard.jpg)
 ##### Using the Application
-![Binary Search Start](https://user-images.githubusercontent.com/47017138/59569516-6d252100-903f-11e9-8e5e-25922c808891.PNG)
-![Binary Search progress](https://user-images.githubusercontent.com/47017138/59569518-6f877b00-903f-11e9-86c9-a5f043877e22.PNG)
+![Binary Search Start](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/Binary%20Search%20Start.PNG)
+![Binary Search progress](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/Binary%20Search%20progress.PNG)
 ##### Application End
-![Binary Search End](https://user-images.githubusercontent.com/47017138/59569519-71513e80-903f-11e9-80a9-1d622c19ad6a.PNG)
+![Binary Search End](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/Binary%20Search%20End.PNG)
 
 ------------------------------
 ## Approach & Efficiency

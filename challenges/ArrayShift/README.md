@@ -32,9 +32,9 @@ Then select and open ```ArrayShift.sln```
 
 
 ##### WhiteBoard
-![ArrayShift Whiteboard](https://user-images.githubusercontent.com/47017138/59377372-f0c0d400-8d06-11e9-8430-5b1f7153dbc1.jpg)
+![ArrayShift Whiteboard](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/ArrayShift%20Whiteboard.jpg)
 ##### Using the Application
-![ArrayShift output](https://user-images.githubusercontent.com/47017138/59569784-32bd8300-9043-11e9-84ef-dbb6f5d75c4a.PNG)
+![ArrayShift output](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/ArrayShift%20output.PNG)
 Inserting 11 into the array
 ------------------------------
 ## Approach & Efficiency
