@@ -100,26 +100,32 @@ namespace StackAndQueueTests
             testQueue.Enqueue(11);
             testQueue.Enqueue(27);
             testQueue.Enqueue(20);
-            Assert.Equal(27, testQueue.Rear.Value);
+            testQueue.Dequeue();
+            Assert.Equal(27, testQueue.Peek());
 
         }
 
-        //[Theory]
-        //[InlineData()]
-        //[InlineData()]
-        //[InlineData()]
-        //[InlineData()]
-        //[InlineData()]
-        //public void CanDequeue()
-        //{
+        [Fact]
+        public void CanDequeue()
+        {
+            Queue<int> testQueue = new Queue<int>();
 
-        //}
+            testQueue.Enqueue(11);
+            testQueue.Enqueue(27);
+            testQueue.Dequeue();
+            Assert.Equal(27, testQueue.Peek());
 
-        //[Fact]
-        //public void CanPeekQueue()
-        //{
 
-        //}
+        }
+
+        [Fact]
+        public void CanPeekQueue()
+        {
+            Queue<int> testQueue = new Queue<int>();
+
+            testQueue.Enqueue(11);
+            Assert.Equal(11, testQueue.Peek());
+        }
 
         //[Fact]
         //public void CanEmptyQueue()
@@ -127,10 +133,11 @@ namespace StackAndQueueTests
 
         //}
 
-        //[Fact]
-        //public void CanMakeEmptyQueue()
-        //{
-
-        //}
+        [Fact]
+        public void CanMakeEmptyQueue()
+        {
+            Queue<int> testQueue = new Queue<int>();
+            Assert.NotNull(testQueue);
+        }
     }
 }
