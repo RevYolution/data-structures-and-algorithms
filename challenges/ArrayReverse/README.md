@@ -11,7 +11,7 @@ Has user select size of array then populates array with their selection of integ
 
 ## Solution
 ### White Board
-![White Board Reverse Array](https://user-images.githubusercontent.com/47017138/59294232-cd7a2400-8c35-11e9-9f59-ce05d16332fc.jpg)
+![White Board Reverse Array](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/White%20Board%20Reverse%20Array.jpg)
 
 ### Output
-![Rverse Array Output](https://user-images.githubusercontent.com/47017138/59294917-6a898c80-8c37-11e9-92b1-9a01fb42208a.PNG)
+![Rverse Array Output](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/Rverse%20Array%20Output.PNG)
