@@ -4,39 +4,58 @@ using System.Text;
 
 namespace StacksAndQueues.Classes
 {
-    class Queue
+    class Queue<T>
     {
-        Node Front { get; set; }
-        Node Rear { get; set; }
+        Node<T> Front { get; set; }
+        Node<T> Rear { get; set; }
 
-        public Queue(int value)
+        /// <summary>
+        /// Requires a queue with an input value set to the from and rear.
+        /// </summary>
+        /// <param name="value">Value of node to be input.</param>
+        public Queue(T value)
         {
-            Node node = new Node(value);
+            Node<T> node = new Node<T>(value);
             Front = node;
             Rear = node;
         }
 
+        /// <summary>
+        /// Allows for an empty queue to be set up. 
+        /// </summary>
         public Queue()
         {
 
         }
 
-        public void Enqueue(int value)
+        /// <summary>
+        /// Adds a node to the rear of the queue. 
+        /// </summary>
+        /// <param name="value">The value of the node being added</param>
+        public void Enqueue(T value)
         {
-            Node node = new Node(value);
+            Node<T> node = new Node<T>(value);
             node.Next = Rear;
             Rear = node;
         }
 
-        public int Dequeue()
+        /// <summary>
+        /// Removes a node from the front of the queue and returns its value. 
+        /// </summary>
+        /// <returns>Value of the node being returned from the queue</returns>
+        public T Dequeue()
         {
-            Node temp = Front;
+            Node<T> temp = Front;
             Front = Front.Next;
             temp.Next = null;
             return temp.Value;
         }
 
-        public int Peek()
+        /// <summary>
+        /// Looks at the front of the queue and returns the value that is there. Returns NullReference if none exists.
+        /// </summary>
+        /// <returns>Value of the front node of the queue.</returns>
+        public T Peek()
         {
             try
             {

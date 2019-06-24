@@ -4,17 +4,17 @@ using System.Text;
 
 namespace StacksAndQueues.Classes
 {
-    class Stack
+    class Stack<T>
     {
-        public Node Top { get; set; }
+        public Node<T> Top { get; set; }
 
         /// <summary>
         /// Constructor that requires at least one value. 
         /// </summary>
         /// <param name="value"></param>
-        public Stack(int value)
+        public Stack(T value)
         {
-            Node node = new Node(value);
+            Node<T> node = new Node<T>(value);
 
             Top = node;
         }
@@ -31,9 +31,9 @@ namespace StacksAndQueues.Classes
         /// Adds a new node to the top of the stack. 
         /// </summary>
         /// <param name="value">Value associated with the node</param>
-        public void Push(int value)
+        public void Push(T value)
         {
-            Node node = new Node(value);
+            Node<T> node = new Node<T>(value);
             node.Next = Top;
             Top = node;
         }
@@ -42,15 +42,22 @@ namespace StacksAndQueues.Classes
         /// Removes the top node from the Stack and returns its value
         /// </summary>
         /// <returns>Value of node being removed</returns>
-        public int Pop()
+        public T Pop()
         {
-            Node temp = Top;
-            Top = Top.Next;
-            temp.Next = null;
-            return temp.Value;
+            try
+            {
+                Node<T> temp = Top;
+                Top = Top.Next;
+                temp.Next = null;
+                return temp.Value;
+            }
+            catch(NullReferenceException)
+            {
+                throw new NullReferenceException("No Node Found");
+            }
         }
 
-        public int Peek()
+        public T Peek()
         {
             try
             {
