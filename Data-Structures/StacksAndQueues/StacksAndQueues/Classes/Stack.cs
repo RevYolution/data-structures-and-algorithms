@@ -11,7 +11,7 @@ namespace StacksAndQueues.Classes
         /// <summary>
         /// Constructor that requires at least one value. 
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="value">Node value that will be added to the stack.</param>
         public Stack(T value)
         {
             Node<T> node = new Node<T>(value);
@@ -57,6 +57,10 @@ namespace StacksAndQueues.Classes
             }
         }
 
+        /// <summary>
+        /// Looks at the top of the stack and returns the value.
+        /// </summary>
+        /// <returns>Value at top of the stack.</returns>
         public T Peek()
         {
             try
