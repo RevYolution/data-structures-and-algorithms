@@ -6,8 +6,9 @@
 
 ------------------------------
 
-## Description
-Console application that allows users to add/addopt dog or cat objects in a  virtual animal shelter. Preferances for which animal the user would like to addopt is taken in and the animal first in queue of that type is given to the user. If no preferance is stated the animal that has been in the shelter longest is returned. 
+### Description
+
+ Console application that allows users to add/addopt dog or cat objects in a  virtual animal shelter. Preferances for which animal the user would like to addopt is taken in and the animal first in queue of that type is given to the user. If no preferance is stated the animal that has been in the shelter longest is returned. 
 ------------------------------
 
 ## Getting Started
