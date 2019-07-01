@@ -8,4 +8,4 @@ Data Structure and Algorithm implementations.
 
 2.[Stacks and Queues](https://github.com/RevYolution/data-structures-and-algorithms/tree/master/Data-Structures/StacksAndQueues)
 
-3. [Binary Trees](https://github.com/RevYolution/data-structures-and-algorithms/tree/master/Data-Structures/Trees)
+3.[Binary Trees](https://github.com/RevYolution/data-structures-and-algorithms/tree/master/Data-Structures/Trees)
