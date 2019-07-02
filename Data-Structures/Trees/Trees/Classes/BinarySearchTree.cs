@@ -49,5 +49,27 @@ namespace Trees.Classes
                 }
             }
         }
+
+        public Node FindNode(int value)
+        {
+            Node root = Tree.Root;
+
+            while(root != null)
+            {
+                if(value == (int)root.Value)
+                {
+                    return root;
+                }
+                if(value < (int)root.Value)
+                {
+                    root = root.Left;
+                }
+                else
+                {
+                    root = root.Right;
+                }
+            }
+            return null;
+        }
     }
 }
