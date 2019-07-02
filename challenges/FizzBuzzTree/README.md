@@ -1,7 +1,7 @@
 # ***Fizz Buzz Tree***
 ------------------------------
 
-# Bracket Validation
+# Fizz Buzz Tree
 ##### *Author: Jon Rice*
 
 ------------------------------
