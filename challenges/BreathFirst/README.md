@@ -38,7 +38,7 @@ Coming Soon
 Coming Soon
 ------------------------------
 ## Approach & Efficiency
-Take in a tree and traverse the tree using Preorder traversial. Recursivly checking the values if they are divisible by 3,5 or 15. If they are the values are replaced by "Fizz", "Buzz" or "FizzBuzz" and the modified tree is returned. 
+Take in a tree and traverse the tree using Breath First traversial. The funciton will set up an empty queue and enqueue the root into the queue. It then checks to see if there is a value at the front of the queue and if there is sets the front value equal to it and prints it. Following that it checks to see if the front has any children and enqueues those values if present. The function repeats this proccess until there is nothing in the queue.  
 ### Big O
 **Time**: O(n)  
 **Space**: O(w)
