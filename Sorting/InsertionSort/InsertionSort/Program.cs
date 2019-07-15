@@ -2,7 +2,7 @@
 
 namespace InsertionSort
 {
-    class Program
+    public class Program
     {
         public static int[] InsertionSort(int[] array)
         {
