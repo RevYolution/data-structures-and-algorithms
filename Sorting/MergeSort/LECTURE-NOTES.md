@@ -1,7 +1,5 @@
 # Merge Sort: Lecture Notes
-Insertion Sort is considered a simple sort. As such it is a brute force sorting method that meaning it finds the smallest element in an array and swaps it with the first element. Then finds the next smallest and swaps with the second element and so on until the array is sorted. 
-
-Insertion Sort can be done in place giving a space complexity of O(1). It can also allow for an array to be built as items are recieved however, lists over 50 are not optimal for this sort. 
+Merge Sort is a divide and conqure sort. The sort continually divides an input array until it cannot divide the array anymore. The array is then merged together and sorted as it is merged. The sort relies on two seperate functions to carry out the sort. The merge function takes in the divided arrays and assumes that they are sorted. The mergesort function calls upon itself to divde an array until there is only one element in the array then passing it to the merge function to be recombined.  
 
 ### Algorithm Overview
   
@@ -38,19 +36,19 @@ Insertion Sort can be done in place giving a space complexity of O(1). It can al
 
 
 ## Diagram
-![Sort Diagram](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/insertionsort.png)
+![Sort Diagram](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/Merge-Sort.png)
 
-*Image above from https://www.geeksforgeeks.org/insertion-sort/
+*Image above from https://www.geeksforgeeks.org/merge-sort/
 
 ## Example Walkthrough
-[Walkthrough](https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/tutorial/)
+[Walkthrough](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/tutorial/)
 
 ## Readings And Reference
 
 ### Videos
-[Geeks for Geeks Video](https://www.youtube.com/watch?v=OGzPmgsI-pQ)
+[Merge Sort Walkthrough Video](https://www.youtube.com/watch?v=7LN9z140U90)
 
 ### Links
-[Khan Academy Insertion Sort](https://www.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/insertion-sort)
+[Khan Academy Merge Sort](https://www.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/overview-of-merge-sort)
 
-[Insertion Sort Wiki](https://en.wikipedia.org/wiki/Insertion_sort)
+[Merge Sort Wiki](https://en.wikipedia.org/wiki/Merge_sort)
