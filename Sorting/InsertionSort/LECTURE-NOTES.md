@@ -60,3 +60,4 @@ Since the sort is done in place a O(1) is given for space.
 
 ### Links
 [Khan Academy Insertion Sort](https://www.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/insertion-sort)
+[Insertion Sort Wiki](https://en.wikipedia.org/wiki/Insertion_sort)
