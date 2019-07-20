@@ -11,7 +11,7 @@ Insertion Sort can be done in place giving a space complexity of O(1). It can al
 1. Students will be able to describe attributes of an Insertion Sort
 2. Stiudents will be able to walk through how an Insertion Sort functions
 3. Students will be able to talk about space and time complexity of Insertion Sort
-4. Students will be able to describe why an Insertion Sort would be used over other sorts
+
 
 ## **Algorithm Walkthrough**
 #### *What does Insertion Sort do at a high level?*
@@ -46,4 +46,17 @@ Since the sort is done in place a O(1) is given for space.
 
 
 ## Diagram
-![Sort Diagram]()
+![Sort Diagram](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/insertionsort.png)
+
+*Image above from https://www.geeksforgeeks.org/insertion-sort/
+
+## Example Walkthrough
+[Walkthrough](https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/tutorial/)
+
+## Readings And Reference
+
+### Videos
+[Geeks for Geeks Video](https://www.youtube.com/watch?v=OGzPmgsI-pQ)
+
+### Links
+[Khan Academy Insertion Sort](https://www.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/insertion-sort)
