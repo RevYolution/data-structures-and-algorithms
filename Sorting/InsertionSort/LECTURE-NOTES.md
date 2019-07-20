@@ -43,3 +43,7 @@ Insertion Sort can be done in place giving a space complexity of O(1). It can al
 ##### *Space*
 
 Since the sort is done in place a O(1) is given for space. 
+
+
+## Diagram
+![Sort Diagram]()
