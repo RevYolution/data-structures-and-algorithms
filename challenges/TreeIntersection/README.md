@@ -31,7 +31,7 @@ Then select and open ```TreeIntersection.sln```
 
 
 ##### WhiteBoard
-![Tree Intersection Whiteboard](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/Repeat%20Word%20Whiteboard.jpg)
+![Tree Intersection Whiteboard](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/Tree%20Intersection%20Whiteboard.PNG)
 ##### Using the Application
 Coming Soon
 ##### Application End
