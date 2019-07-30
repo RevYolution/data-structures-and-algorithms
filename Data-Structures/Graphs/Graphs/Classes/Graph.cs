@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
 namespace Graphs.Classes
 {
-    class Graph<T>
+   public  class Graph<T>
     {
         Dictionary<Vertex<T>, List<Edge<T>>> AdjacencyList { get; set; }
         public int _size;
@@ -64,6 +65,18 @@ namespace Graphs.Classes
         public int Size()
         {
             return _size;   
+        }
+
+        public void Print()
+        {
+            foreach (var vertex in AdjacencyList)
+            {
+                Console.Write($"Vertex: {vertex.Key.Value} ->");
+                //foreach (var edge in AdjacencyList)
+                //{
+                //    Console.Write($"{edge.Vertex.Value} ({edge.Weight}) ->");
+                //}
+            }
         }
     }
 }
