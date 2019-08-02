@@ -27,3 +27,6 @@ All of these types of graphs can be created in this implementation.
 | GetNodes | Gets all verticies in the graph | O(1) | O(n) |
 | GetNeighbors | Gets all neighboring verticies of a given vertex | O(n) | O(n) |
 | Size | Gets the number of verticies in the graph | O(1) | O(1) |
+
+## Whiteboard
+![Breadth First Graph](https://github.com/RevYolution/data-structures-and-algorithms/blob/master/assets/BreadthFirst%20Graph%20Whiteboard.jpg)
