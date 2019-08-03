@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -60,6 +61,30 @@ namespace Graphs.Classes
             }
 
             return vertices;
+        }
+
+        public ArrayList BreadthFirst(Vertex<T> vertex)
+        {
+            ArrayList visited = new ArrayList();
+            Queue<Vertex<T>> q = new Queue<Vertex<T>>();
+
+            q.Enqueue(vertex);
+
+            while (q.Peek() != null)
+            {
+                if (vertex.isVisited == false)
+                {
+                    visited.Add(vertex);
+                    foreach (var item in AdjacencyList.Keys)
+                    {
+                        q.Enqueue(item);
+                    }
+                }
+                vertex.isVisited = true;
+                q.Dequeue();
+            }
+
+            return visited;
         }
 
         public int Size()
