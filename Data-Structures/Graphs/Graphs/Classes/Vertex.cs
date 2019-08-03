@@ -8,6 +8,8 @@ namespace Graphs.Classes
     {
         public T Value { get; set; }
 
+        public bool isVisited { get; set; }
+
         public Vertex (T value)
         {
             Value = value;
