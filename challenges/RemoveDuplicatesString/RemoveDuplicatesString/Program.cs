@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace RemoveDuplicatesString
 {
@@ -7,10 +8,11 @@ namespace RemoveDuplicatesString
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Original text:All I Think About is winning");
+            Console.WriteLine("Modified:" + RemoveDuplicates("All I Think About is winning"));
         }
 
-       public string RemoveDuplicates(string input)
+       public static string RemoveDuplicates(string input)
         {
             HashSet<char> check = new HashSet<char>();
 
@@ -20,13 +22,11 @@ namespace RemoveDuplicatesString
                 {
                     check.Add(item);
                 }
-                else
-                {
-                    input.Remove(item);
-                }
             }
 
-            return input;
+            string output = string.Join("", check);
+
+            return output;
         }
     }
 }
