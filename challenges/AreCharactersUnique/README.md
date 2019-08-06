@@ -1,4 +1,4 @@
-# Find Tree Depth
+# Are Characters in a String Unique
 A C# algorithm challenge implementation to see if all characters in string are unique.
 
 ## Challenge
