@@ -3,16 +3,18 @@ using System.Collections.Generic;
 
 namespace AreCharactersUnique
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            AreCharactersUnique("The quick brown lazy");
         }
 
-        public bool AreCharactersUnique(string input)
+        public static bool AreCharactersUnique(string input)
         {
             HashSet<char> check = new HashSet<char>();
+
+            //string noSpace = string.Join("", input);
 
             foreach (char item in input)
             {
